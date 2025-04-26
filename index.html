@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porufolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    nav {
+      background-color: #1f2937;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #f3f4f6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #10b981;
+    }
+
+    header {
+      padding: 140px 20px 60px;
+      text-align: center;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .cta {
+      padding: 12px 28px;
+      background-color: white;
+      color: #059669;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #1f2937;
+      color: #fff;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #1f2937;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+      overflow: hidden;
+      max-width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 0;
+      padding: 20px;
+      background-color: #10b981;
+      color: white;
+      font-size: 1.4em;
+    }
+
+    .project-card p {
+      padding: 20px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #1f2937;
+      text-align: center;
+      color: #f3f4f6;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div style="color: #10b981; font-weight: 700; font-size: 1.2em;">Joseph</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Hi, I'm Joseph Abraham A</h1>
+    <p>A dedicated Web Developer specializing in building dynamic, user-friendly applications with the MERN stack and a focus on clean, responsive design.</p>
+    <a href="contact.html" class="cta">Let's Work Together</a>
+  </header>
+
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://imgs.search.brave.com/KJu1WwyVF-2NO0wARJbym3p4vkLUZbsWMVroQPIUU6w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMx/MTk2Njc4NC9waG90/by9jaGF0LXNwZWVj/aC1idWJibGUtb24t/c21hcnQtcGhvbmUt/c2NyZWVuLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz02cUM3/NUhVNnI5cFdtbEZD/SjdranlIaGJGVXgy/N0oxZ1lEMDJzUzBh/dWZVPQ" alt="Chat App Project">
+        <h3>Realtime Chat App</h3>
+        <p>Built a scalable chat platform using Node.js, MongoDB, WebSocket, and React. Supports group chat, typing indicators, and user presence.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://imgs.search.brave.com/fScAPWhdzHagiUVV-hq73cPPxlwWATnZ7qKW-LkRViU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vcGhvdG9z/L3RyYWRpbmctY2hh/cnRzLW9uLWEtZGlz/cGxheS1waWN0dXJl/LWlkMTMxNzU4Nzg4/Nz9rPTIwJm09MTMx/NzU4Nzg4NyZzPTYx/Mng2MTImdz0wJmg9/SlhZRnU0dmh0QWhy/WlktVnZGLXg4cW16/Q0VSQm5ubS1td1lJ/S1RSTjRKUT0.jpeg" alt="Data Dashboard">
+        <h3>Data Analytics Dashboard</h3>
+        <p>Interactive dashboard built with React and Chart.js for visualizing real-time data from APIs. Integrated filters and dark mode toggle.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://imgs.search.brave.com/F-KYvTe3De1tFvrwnmagGBqA2Qvjn8Siib0EVwi5gZg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/ZWNvbW1lcmNlLWJs/YWNrLWZyaWRheS5q/cGc_d2lkdGg9MTAw/MCZmb3JtYXQ9cGpw/ZyZleGlmPTAmaXB0/Yz0w" alt="E-Commerce App">
+        <h3>E-Commerce Web App</h3>
+        <p>Developed a responsive e-commerce site with cart, payment integration, and admin dashboard using React, Express, and Stripe API.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

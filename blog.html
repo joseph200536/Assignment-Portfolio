@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+    }
+
+    nav {
+      background-color: #1f1f2e;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00c896;
+    }
+
+    .container {
+      padding: 100px 20px 50px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f1f2e;
+      font-size: 2.8em;
+      margin-bottom: 40px;
+    }
+
+    .blog-post {
+      background-color: #fff;
+      border-left: 6px solid #00c896;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      margin-bottom: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-post h2 {
+      font-size: 2em;
+      color: #1f1f2e;
+      margin-bottom: 8px;
+    }
+
+    .blog-post .date {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 15px;
+    }
+
+    .blog-post p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <div class="container">
+    <h1>Blog & Insights</h1>
+
+    <div class="blog-post">
+      <h2>Why I Chose the MERN Stack for My Portfolio</h2>
+      <p class="date">Posted on April 20, 2025</p>
+      <p>After experimenting with different tech stacks, I realized MERN (MongoDB, Express, React, Node.js) gave me the perfect balance of speed, scalability, and full control. In this post, I break down why it became my go-to stack for building personal and client projects.</p>
+    </div>
+
+    <div class="blog-post">
+      <h2>Building My First Real-Time Chat App with WebSockets</h2>
+      <p class="date">Posted on April 10, 2025</p>
+      <p>Creating a real-time chat application from scratch taught me a lot about sockets, server-client communication, and event handling. Here's a behind-the-scenes look into how I used Node.js, Socket.IO, and MongoDB to make it all happen.</p>
+    </div>
+
+    <div class="blog-post">
+      <h2>Design Meets Logic: My Experience in Computer Science and Design</h2>
+      <p class="date">Posted on March 25, 2025</p>
+      <p>Blending creative thinking with programming logic has been one of the most exciting aspects of my academic journey. In this blog, I reflect on how studying both design and CS has shaped my approach to web development and user experience.</p>
+    </div>
+    
+  </div>
+
+</body>
+</html>
